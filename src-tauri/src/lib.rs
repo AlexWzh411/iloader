@@ -11,6 +11,7 @@ mod secure_storage;
 mod error;
 mod logging;
 mod operation;
+mod apple_auth;
 
 use crate::{
     account::{
