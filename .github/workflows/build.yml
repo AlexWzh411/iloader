@@ -14,7 +14,7 @@ on:
 jobs:
   build:
     permissions:
-      contents: write
+      contents: read
     env:
       HAVE_SIGNING_SECRETS: ${{ secrets.DEV_ID_P12_BASE64 != '' && secrets.DEV_ID_P12_PASSWORD != '' && secrets.DEV_IDENTITY_NAME != '' }}
       HAVE_NOTARIZE_SECRETS: ${{ secrets.NOTARIZE_APPLE_ID != '' && secrets.NOTARIZE_APP_SPECIFIC_PASS != '' && secrets.NOTARIZE_TEAM_ID != '' }}
